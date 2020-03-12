@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Sign In Form</title>
+</head>
+
+<body>
+
+<div class="login-container d-flex align-items-center justify-content-center">
+
+    <form action="#" class="login-form text-center">
+
+        <h1 class="mb-5 font-weight-light">Form with user input display</h1>
+        <div class="form-group">
+            <input type="text" id="firstname" class="form-control rounded-pill form-control-lg" placeholder="FirstName">
+        </div>
+        <div class="form-group">
+            <input type="text" id="lastname" class="form-control rounded-pill form-control-lg" placeholder="LastName">
+        </div>
+        <div class="form-group">
+            <input type="email" id="email" class="form-control rounded-pill form-control-lg" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+            <input type="password" id="password" class="form-control rounded-pill form-control-lg" placeholder="Password">
+        </div>
+        <button onclick="displayFormValues()" type="submit" class="btn mt-5 btn-custom btn-block rounded-pill btn-lg">Submit</button>
+    </form>
+
+    
+        <div id="output" class="col-lg-6">
+            <div class="conainer-fluid"></div>
+            <span class="input-details">First Name:</span>
+            <h3 id="first-name"></h3>
+            <span class="input-details">Last Name</span>
+            <h3 id="last-name"></h3>
+            <span class="input-details">Email</span>
+            <h3 id="e-mail"></h3>
+            <span class="input-details">Password</span>
+            <h3 id="pass-word"></h3>
+        </div>
+</div>
+</body>
